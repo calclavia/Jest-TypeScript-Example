@@ -1,0 +1,43 @@
+{
+  "name": "jest-typescript-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calclavia/Jest-TypeScript-Example.git"
+  },
+  "author": "Henry Mao",
+  "license": "LGPL",
+  "bugs": {
+    "url": "https://github.com/calclavia/Jest-TypeScript-Example/issues"
+  },
+  "homepage": "https://github.com/calclavia/Jest-TypeScript-Example#readme",
+  "devDependencies": {
+    "jest-cli": "^13.2.3"
+  },
+  "jest": {
+    "verbose": true,
+    "scriptPreprocessor": "<rootDir>/jest.js",
+    "testPathDirs": [
+      "src"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testFileExtensions": [
+      "ts",
+      "tsx"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "collectCoverage": true
+  }
+}
